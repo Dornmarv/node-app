@@ -1,5 +1,5 @@
 <div class="panel panel-default" ng-init="getStudents()">
-	<div class="panel-heading">
+	<div class="panel-heading panel-responsive">
 	  <p class="panel-title"><span style="color:#5bc0de;" 
 class="glyphicon glyphicon-list"> </span> Students List</p>
 	</div>
@@ -17,7 +17,7 @@ class="glyphicon glyphicon-list"> </span> Students List</p>
 			<tr ng-repeat="student in students">
 			  <td>{{ student.full_name }}</td>
 			  <td>{{ student.email }}</td>
-			  <td>{{ student._id }}</td>
+			  <td>{{ student.contact }}</td>
 			  <td> 
 			    <a href="#/students/{{student._id}}/show" class="btn btn-info"> Show  </a>
 			    <a href="#/students/{{student._id}}/edit" class="btn btn-success"><span class="glyphicon glyphicon-edit"> </span> Edit  </a>
