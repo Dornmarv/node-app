@@ -1,0 +1,19 @@
+<div class="panel panel-default" ng-init="showStudent()">
+	<div class="panel-heading">
+	  <p class="panel-title"> Student Detail Information</p>
+	</div>
+	<div class="panel-body">
+		<form>
+		<div class="form-group">
+		 <label class="form-control">Full Name: {{ student.full_name }}</label>
+		 <label class="form-control">Email: {{ student.email }}</label>
+		 <label class="form-control">Contact No: {{ student.contact }}</label>
+		 <label class="form-control">Gender: {{ student.gender }}</label>
+		 <label class="form-control">GPA: {{ student.GPA }}</label>
+		 <label class="form-control">ID: {{ student._id }}</label>
+		<a href="#/students" class="btn btn-default"> Cancel</a>
+		</div>
+	</form>		
+    <div>
+<div>
+	<script src="controllers/controllers.js"></script>

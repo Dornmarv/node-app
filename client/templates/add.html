@@ -1,0 +1,33 @@
+<div class="panel panel-default">
+	<div class="panel-heading">
+	  <p class="panel-title"><span style="color:#5bc0de;" class="glyphicon glyphicon-plus"> </span> Add New Student</p>
+	</div>
+	<div class="panel-body">
+		<form ng-submit="addStudent()">
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" class="form-control" id="full_name" placeholder="John Doe" ng-model="student.full_name" required>
+    </div>
+    <div class="form-group">
+      <label for="dept">Email:</label>
+      <input type="email" class="form-control" id="email" ng-model="student.email" required>
+    </div>
+    <div class="form-group">
+      <label for="area">Contact Number:</label>
+      <input type="text" class="form-control" id="contact" ng-model="student.contact" required>
+    </div>
+    <div class="form-group">
+      <label for="contact">Gender:</label>
+      <select id="gender" class="form-control" ng-model="student.gender" placeholder="John Doe" required>
+        <option value="Male"> Male </option>
+        <option value="Female"> Female </option>
+      </select>
+      <div class="form-group">
+      <label for="status">GPA:</label>
+      <input type="text" class="form-control" id="GPA" ng-model="student.GPA" required>
+    </div>
+    <button type="submit" style="color:#5bc0de;" class="btn btn-default">Save</button>
+    <a href="#/students" class="btn btn-default"> Cancel</a>
+</form>		
+    <div>
+<div>
